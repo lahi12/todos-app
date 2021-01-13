@@ -7,7 +7,9 @@ const EditTodo = ({ todo, closeModal }) => {
     edit_Todo();
     closeModal();
   };
-  return <TodoForm state={state} dispatch={dispatch} action={editTodo} />;
+  return (
+    <TodoForm state={state} dispatch={dispatch} action={editTodo} mode="edit" />
+  );
 };
 
 export default EditTodo;

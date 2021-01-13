@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 
-const TodoForm = ({ state, dispatch, action }) => {
+const TodoForm = ({ state, dispatch, action, mode }) => {
   const { name, summary, scheduleInfo } = state;
   const [error, setError] = useState(false);
   const submit = () => {
@@ -58,7 +58,7 @@ const TodoForm = ({ state, dispatch, action }) => {
         </Form.Group>
       ) : null}
       <Button variant="primary" onClick={submit}>
-        {action.name === "editTodo" ? "Update" : "Create"} Todo
+        {mode === "edit" ? "Update" : "Create"} Todo
       </Button>
     </Form>
   );

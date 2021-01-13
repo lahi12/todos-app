@@ -7,7 +7,14 @@ const CreateTodo = ({ closeModal }) => {
     create_Todo();
     closeModal();
   };
-  return <TodoForm state={state} dispatch={dispatch} action={createTodo} />;
+  return (
+    <TodoForm
+      state={state}
+      dispatch={dispatch}
+      action={createTodo}
+      mode="create"
+    />
+  );
 };
 
 export default CreateTodo;
