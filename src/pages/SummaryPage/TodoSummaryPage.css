@@ -1,0 +1,32 @@
+.summary-page {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+}
+
+.title {
+  margin: 20px;
+  font-size: 24px;
+}
+
+.summary {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: dodgerblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+}
+
+.go-back {
+  cursor: pointer;
+  color: dodgerblue;
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+  .summary-page {
+    position: static;
+    width: auto;
+  }
+}

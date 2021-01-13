@@ -1,0 +1,37 @@
+.reminders-page {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+  .reminders-page {
+    position: static;
+    width: auto;
+  }
+}
+
+.no-reminders {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: slide 1s;
+}
+
+.no-reminders span {
+  font-size: 30px;
+  color: darkgrey;
+}
+
+@keyframes slide {
+  from {
+    filter: opacity(0);
+    transform: translateY(-50px);
+  }
+  to {
+    filter: opacity(1);
+    transform: translateY(0);
+  }
+}
