@@ -58,7 +58,7 @@ const TodoForm = ({ state, dispatch, action }) => {
         </Form.Group>
       ) : null}
       <Button variant="primary" onClick={submit}>
-        {action.caller.name === "editTodo" ? "Update" : "Create"} Todo
+        {action.name === "editTodo" ? "Update" : "Create"} Todo
       </Button>
     </Form>
   );
